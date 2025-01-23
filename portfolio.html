@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>portfolio</title>
+
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- custom css file link  -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- navbar section starts  -->
+
+<nav class="navbar"> <a href="index.html"> <i class="fas fa-home"></i> <span>home</span> </a> <a href="about.html"> <i class="fas fa-user"></i> <span>about</span> </a> <a href="portfolio.html"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a> <a href="blogs.html"> <i class="fas fa-quote-left"></i> <span>Why Me?</span> </a> <a href="contact.html"> <i class="fas fa-address-book"></i> <span>contact</span> </a> </nav>
+
+<!-- navbar section ends --> 
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio">
+  <h1 class="heading"> <span>my</span> work </h1>
+  <div class="box-container gallery">
+    <div class="box"> <img src="images/img-1.jpg" alt="Thumbnail 1" >
+      <div class="content">
+        <h3>project 01</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template01.png')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-2.jpg"  alt="Thumbnail 2" >
+      <div class="content">
+        <h3>project 02</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template02.png')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-3.jpg"  alt="Thumbnail 3" >
+      <div class="content">
+        <h3>project 03</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template03.png')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-4.jpg"  alt="Thumbnail 4" >
+      <div class="content">
+        <h3>project 04</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template04.png')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-5.jpg"  alt="Thumbnail 5" >
+      <div class="content">
+        <h3>project 05</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template05.jpg')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-6.jpg" alt="Thumbnail 6" >
+      <div class="content">
+        <h3>project 06</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template06.png')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-7.jpg"  alt="Thumbnail 7" >
+      <div class="content">
+        <h3>project 07</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template07.jpg')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-8.jpg"  alt="Thumbnail 8" >
+      <div class="content">
+        <h3>project 08</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template08.jpg')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-9.jpg" alt="Thumbnail 9" >
+      <div class="content">
+        <h3>project 09</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-signature03.png')">View Template</a> </div>
+    </div>
+	  <div class="box"> <img src="images/img-10.jpg"  alt="Thumbnail 10" >
+      <div class="content">
+        <h3>project 10</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-signature01.png')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-11.jpg"  alt="Thumbnail 11" >
+      <div class="content">
+        <h3>project 11</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template02.png')">View Template</a> </div>
+    </div>
+    <div class="box"> <img src="images/img-12.jpg" alt="Thumbnail 12" >
+      <div class="content">
+        <h3>project 12</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template09.jpg')">View Template</a> </div>
+    </div>
+	  <div class="box"> <img src="images/img-13.jpg" alt="Thumbnail 13" >
+      <div class="content">
+        <h3>project 13</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template10.jpg')">View Template</a> </div>
+    </div>
+	  <div class="box"> <img src="images/img-14.jpg" alt="Thumbnail 14" >
+      <div class="content">
+        <h3>project 14</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-template11.jpg')">View Template</a> </div>
+    </div>
+	  <div class="box"> <img src="images/img-15.jpg" alt="Thumbnail 15" >
+      <div class="content">
+        <h3>project 15</h3>
+        <p>&nbsp;</p>
+        <a class="thumbnail" onclick="openModal('images/yogi-signature04.jpg')">View Template</a> </div>
+    </div>
+  </div>
+  <!--<a href="#"class="btn"> load more <i class="fas fa-redo"></i> </a>--> 
+  
+</section>
+<div id="myModal"  class="zoomimg-modal"> <span class="close" onclick="closeModal()">&times;</span> <img id="modalImage" class="modal-content"> </div>
+<script> 
+	function openModal(imageSrc) { document.getElementById('modalImage').src = imageSrc; document.getElementById('myModal').style.display = 'block'; } function closeModal() { document.getElementById('myModal').style.display = 'none'; }</script> 
+<!-- portfolio section ends -->
+
+</body>
+</html>
